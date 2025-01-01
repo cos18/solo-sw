@@ -50,12 +50,17 @@
                     </aside>
                 </section>
 
+                <!-- Default Comments content
                 {{#if comments}}
                     <div class="gh-comments gh-canvas">
                         <h2 class="gh-comments-title">{{comment_count empty="" single="comment" plural="comments"}}</h2>
                         {{comments title="" count=false}}
                     </div>
                 {{/if}}
+                -->
+
+                <!-- Custom Comments content -->
+                {{> disqus}}
 
                 <footer class="gh-article-footer gh-canvas">
                     <nav class="gh-navigation">

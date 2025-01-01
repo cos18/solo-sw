@@ -33,6 +33,10 @@
         document.documentElement.className = `has-${textColor}-text`;
     </script>
 
+    {{>prism}}
+    {{>katex}}
+    {{>custom-font}}
+
     {{ghost_head}}
 </head>
 
@@ -114,6 +118,7 @@
 
 <script src="{{asset "built/main.min.js"}}"></script>
 
+{{>newwindow}}
 {{ghost_foot}}
 
 </body>
